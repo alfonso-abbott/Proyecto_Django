@@ -1,0 +1,13 @@
+/* Estilos personalizados para el proyecto */
+body {
+    scroll-behavior: smooth;
+}
+
+/* efecto para las tarjetas de servicios */
+.servicio-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.servicio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
