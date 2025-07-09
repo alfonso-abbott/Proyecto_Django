@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Inicio - Ejemplo Django UI{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="vh-100 d-flex align-items-center bg-light" id="hero">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold">Bienvenido a un ejemplo moderno con Django</h1>
+        <p class="lead">Proyecto base para iniciar tus desarrollos.</p>
+        <a href="#servicios" class="btn btn-primary btn-lg mt-3">Ver más</a>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="py-5" id="servicios">
+    <div class="container">
+        <h2 class="text-center mb-4">Servicios</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <!-- Card with hover effect -->
+                <div class="card h-100 shadow-sm border-0 servicio-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-bolt fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Rápido</h5>
+                        <p class="card-text">Aplicaciones ágiles y eficientes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 servicio-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-mobile-alt fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Responsive</h5>
+                        <p class="card-text">Diseños adaptados a cualquier dispositivo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 servicio-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-lock fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Seguro</h5>
+                        <p class="card-text">Buenas prácticas en seguridad web.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-5 bg-light" id="contacto">
+    <div class="container">
+        <h2 class="text-center mb-4">Contacto</h2>
+        <form class="mx-auto" style="max-width: 600px;">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</section>
+{% endblock %}
