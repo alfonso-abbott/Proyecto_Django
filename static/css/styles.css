@@ -1,13 +1,61 @@
-/* Estilos personalizados para el proyecto */
+/*
+Estilos personalizados para el proyecto.
+
+Se definen variables CSS para los colores principales de la interfaz.
+La combinación solicitada es verde agua y morado.
+*/
+
+:root {
+    /* Verde agua */
+    --color-primario: #1abc9c;
+    /* Morado intenso */
+    --color-secundario: #6f42c1;
+}
+
+/* Comportamiento global de desplazamiento suave */
 body {
     scroll-behavior: smooth;
 }
 
-/* efecto para las tarjetas de servicios */
+/* Color personalizado para la barra de navegación */
+.navbar-dark.bg-dark {
+    background-color: var(--color-secundario) !important;
+}
+
+/* Botones primarios con nuestro verde agua */
+.btn-primary {
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+}
+.btn-primary:hover {
+    background-color: #17a589; /* tono ligeramente más oscuro */
+    border-color: #17a589;
+}
+
+/*
+Modo oscuro. Cuando el <body> tenga la clase "dark-mode",
+se invierten los colores para no cansar la vista.
+*/
+body.dark-mode {
+    background-color: #121212;
+    color: #f8f9fa;
+}
+body.dark-mode .navbar-dark.bg-dark {
+    background-color: #000 !important;
+}
+body.dark-mode .card {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+/*
+Efecto para las tarjetas de servicios. Al pasar el mouse se elevan levemente
+y proyectan una sombra para dar la impresión de "levantarse".
+*/
 .servicio-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .servicio-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }

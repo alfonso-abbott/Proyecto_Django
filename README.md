@@ -6,9 +6,11 @@ Este repositorio contiene un proyecto **Django** minimalista pensado como base p
 
 - Proyecto Django llamado `ejemplo_django_ui`.
 - Una aplicación incluida: `pagina`.
-- Uso de **Bootstrap 5** y FontAwesome mediante CDN para dotar de un estilo atractivo sin necesidad de instalaciones adicionales.
-- Plantilla base con navegación responsive, sección hero animada, tarjetas de servicios y un sencillo formulario de contacto con validación básica en JavaScript.
-- Archivos estáticos separados en la carpeta `static/`.
+- Uso de **Bootstrap 5** y FontAwesome mediante CDN para un aspecto moderno.
+- Tarjetas de servicios con efecto "levantarse" al posar el mouse.
+- Botón de **modo oscuro** que invierte los colores de la página.
+- Colores principales verde agua y morado, definidos en `static/css/styles.css`.
+- Script `run.py` para iniciar el servidor y abrir el navegador automáticamente.
 
 ## Requisitos previos
 
@@ -54,6 +56,9 @@ README.md
 
 ### ¿Qué contiene cada archivo?
 
+Para un recorrido paso a paso revisa también `README2.md` donde se explica
+qué archivo abrir a continuación para aprender del proyecto.
+
 - **manage.py**: script para ejecutar comandos de Django.
 - **ejemplo_django_ui/settings.py**: configuración principal del proyecto (base de datos SQLite, rutas de `templates` y `static`, etc.).
 - **ejemplo_django_ui/urls.py**: rutas globales que incluyen las de la app `pagina`.
@@ -65,14 +70,17 @@ README.md
 
 1. Activa tu entorno virtual y asegúrate de tener Django instalado.
 2. Sitúate en la raíz del repositorio (donde se encuentra `manage.py`).
-3. Ejecuta las migraciones y luego inicia el servidor de desarrollo:
+3. Ejecuta las migraciones:
 
 ```bash
 python manage.py migrate
-python manage.py runserver
 ```
 
-4. Abre `http://localhost:8000/` en tu navegador para ver la página de inicio.
+4. Finalmente lanza el script `run.py` para que abra el navegador automáticamente:
+
+```bash
+python run.py
+```
 
 ## Capturas de pantalla sugeridas
 
@@ -84,6 +92,12 @@ Se recomienda añadir capturas de la sección hero, las tarjetas de servicios y 
 - [Django](https://www.djangoproject.com/)
 - [Bootstrap 5](https://getbootstrap.com/) para estilos y componentes.
 - [FontAwesome](https://fontawesome.com/) para iconos.
+
+## Recorrido guiado
+
+Si quieres profundizar en el código fuente sigue las indicaciones de
+`README2.md`, donde se propone un orden de lectura de los archivos
+para comprender mejor el proyecto.
 
 ## Créditos y licencia
 
