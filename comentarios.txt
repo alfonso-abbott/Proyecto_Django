@@ -1,0 +1,79 @@
+Quiero que crees un proyecto completo desde cero usando el framework Django de Python. El objetivo es construir una aplicación web moderna, profesional, bien estructurada y que sirva como ejemplo completo para otros desarrolladores.
+
+⚠️ IMPORTANTE: **No crees ninguna carpeta adicional para el proyecto**. Todos los archivos y carpetas del proyecto deben crearse directamente en el directorio raíz del repositorio actual (es decir, donde se encuentra este archivo comentarios.txt).
+
+---
+
+🧩 Requisitos del proyecto:
+
+1. El nombre del proyecto Django debe ser `ejemplo_django_ui`.
+2. Debe incluir al menos una app llamada `pagina`.
+3. La interfaz debe ser **moderna y profesional**, evitando la apariencia básica de Django.
+4. Incluir elementos visuales interactivos: animaciones, efectos hover, desplazamientos con el mouse, transiciones suaves, etc.
+5. Puede usarse Bootstrap 5, Tailwind CSS u otra alternativa moderna, con justificación en el README.
+6. El sitio debe incluir:
+   - Página de inicio con sección hero animada
+   - Sección de servicios con tarjetas animadas
+   - Navegación responsive
+   - Footer moderno
+
+---
+
+📁 Estructura esperada:
+
+Todos los archivos y carpetas deben generarse **directamente en la raíz del repositorio**. No quiero carpetas anidadas como `proyecto/` o `src/` que contengan todo dentro. La estructura debe quedar así directamente en la raíz:
+
+- manage.py
+- carpeta `ejemplo_django_ui/` con settings y urls
+- carpeta `pagina/` con vistas
+- carpeta `templates/` con los HTML
+- carpeta `static/` con CSS y JS
+- README.md completamente explicado
+
+---
+
+📘 README.md:
+
+Debe ser extenso y didáctico. Incluye:
+
+- Descripción general del proyecto
+- Cómo crear entorno virtual
+- Instalación de dependencias
+- Cómo correr el servidor
+- Estructura del proyecto explicada (por ejemplo: “Ve a `pagina/views.py` para ver la lógica de las vistas”)
+- Sugerencia de capturas de pantalla
+- Explicaciones para cada carpeta y archivo importante
+- Créditos, licencia y tecnologías usadas
+
+---
+
+🧠 Comentarios y documentación:
+
+Todo el código debe estar completamente comentado:
+- Explica cada función, clase o bloque relevante
+- Comenta templates HTML con secciones identificadas (`<!-- Hero Section -->`, etc.)
+- Incluye buenas prácticas
+
+---
+
+🎨 Estética avanzada:
+
+- Estilos modernos con efectos de desplazamiento, animaciones y transiciones CSS
+- Si usas JavaScript, justifica por qué y dónde
+- Responsive para móviles
+
+---
+
+🚀 Extras opcionales (si hay espacio o tiempo):
+
+- Validación de formularios (JS o HTML)
+- Uso de íconos tipo FontAwesome
+- Sección de contacto sin backend funcional, pero con validación
+
+---
+
+🧪 Instrucciones para ti como generador:
+
+Genera todo paso a paso, explicando cada bloque de código que escribas. No agrupes todo al final. Incluye los archivos tal como deben verse en el proyecto, directamente en la raíz.
+
+Gracias.
